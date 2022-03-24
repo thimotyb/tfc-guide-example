@@ -27,6 +27,6 @@ resource "aws_instance" "ubuntu2" {
   }
   
   lifecycle {
-    ignore_changes = true
+    ignore_changes = [ instance_type, tags ]
   }
 }
