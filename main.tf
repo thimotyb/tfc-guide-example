@@ -25,4 +25,8 @@ resource "aws_instance" "ubuntu2" {
   tags = {
     Name = "Istanza da modificare"
   }
+  
+  lifecycle {
+    prevent_destroy = true
+  }
 }
