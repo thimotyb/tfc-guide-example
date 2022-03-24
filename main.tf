@@ -27,6 +27,6 @@ resource "aws_instance" "ubuntu2" {
   }
   
   lifecycle {
-    prevent_destroy = true
+    ignore_changes = true
   }
 }
