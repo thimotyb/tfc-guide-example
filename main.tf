@@ -32,6 +32,6 @@ resource "aws_instance" "ubuntu2" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "Istanza da modificare!"
+    Name = "Istanza Pippo Pluto Paperino modificata"
   }
 }
